@@ -67,6 +67,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
     title={roadmapData.title}
     description={roadmapData.description}
     note={roadmapData.note}
+    tnsBannerLink={roadmapData.tnsBannerLink}
     roadmapId={roadmapId}
     hasTopics={roadmapData.hasTopics}
     isUpcoming={roadmapData.isUpcoming}
@@ -76,7 +77,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
     {
       !roadmapData.isUpcoming && roadmapData.jsonUrl && (
         <div class='max-w-[1000px] container relative'>
-          <ShareIcons description={roadmapData.featuredDescription} pageUrl={`https://roadmap.sh/${roadmapId}`} />
+          <ShareIcons description={roadmapData.briefDescription} pageUrl={`https://roadmap.sh/${roadmapId}`} />
           <TopicOverlay contentContributionLink={contentContributionLink} />
 
           <FrameRenderer
