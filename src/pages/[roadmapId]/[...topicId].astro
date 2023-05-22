@@ -2,7 +2,7 @@
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import RoadmapBanner from '../../components/RoadmapBanner.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getRoadmapTopicFiles, RoadmapTopicFileType } from '../../lib/roadmap-topic';
+import { getRoadmapTopicFiles,RoadmapTopicFileType } from '../../lib/roadmap-topic';
 
 export async function getStaticPaths() {
   const topicPathMapping = await getRoadmapTopicFiles();
